@@ -27,3 +27,10 @@ select * from employee_payroll
 select salary from employee_payroll where name = 'Prajwal'
 select * from employee_payroll
 where start between cast ('2018-01-01' as date) and date(now())
+
+# UC 6
+alter table employee_payroll add gender char(1)
+update employee_payroll set gender = 'M'
+where name ='Prajwal' or name = 'Shubham'
+update employee_payroll set gender = 'F'
+where name ='Akash'
