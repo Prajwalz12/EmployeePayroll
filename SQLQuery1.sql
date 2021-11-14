@@ -42,3 +42,12 @@ select SUM(salary) from employee_payroll where gender = 'M' group by gender
 select MIN(salary) from employee_payroll where gender = 'M' group by gender
 select MAX(salary) from employee_payroll where gender = 'M' group by gender
 select COUNT(salary) from employee_payroll where gender = 'M' group by gender
+
+# UC 8
+
+alter table employee_payroll add phone_number varchar(100)
+alter table employee_payroll add department varchar(100)
+alter table employee_payroll add address varchar(100) not null  default 'TBD'
+
+
+select * from employee_payroll
