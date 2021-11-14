@@ -21,3 +21,9 @@ insert into employee_payroll values
 
 # UC 4
 select * from employee_payroll
+
+
+# UC 5
+select salary from employee_payroll where name = 'Prajwal'
+select * from employee_payroll
+where start between cast ('2018-01-01' as date) and date(now())
