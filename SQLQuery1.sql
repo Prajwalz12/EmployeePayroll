@@ -18,3 +18,6 @@ insert into employee_payroll values
 (1,'Prajwal',100000.00,'2021-04-03'),
 (2,'Shubham',200000.00,'2021-05-22'),
 (3,'Akash',300000.00,'2021-06-19')
+
+# UC 4
+select * from employee_payroll
