@@ -34,3 +34,11 @@ update employee_payroll set gender = 'M'
 where name ='Prajwal' or name = 'Shubham'
 update employee_payroll set gender = 'F'
 where name ='Akash'
+
+# UC 7
+
+select AVG(salary) from employee_payroll where gender = 'M' group by gender
+select SUM(salary) from employee_payroll where gender = 'M' group by gender
+select MIN(salary) from employee_payroll where gender = 'M' group by gender
+select MAX(salary) from employee_payroll where gender = 'M' group by gender
+select COUNT(salary) from employee_payroll where gender = 'M' group by gender
