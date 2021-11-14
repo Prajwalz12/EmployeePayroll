@@ -51,3 +51,12 @@ alter table employee_payroll add address varchar(100) not null  default 'TBD'
 
 
 select * from employee_payroll
+
+
+# UC 9
+EXEC sp_RENAME 'employee_payroll.salary' , 'basic_pay', 'COLUMN'
+
+ALTER TABLE employee_payroll add deductions float
+ALTER TABLE employee_payroll add taxable_pay float
+ALTER TABLE employee_payroll add tax float
+ALTER TABLE employee_payroll add net_pay float
